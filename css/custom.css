@@ -1,0 +1,305 @@
+.priceing-table-main {
+    margin: 4em 0 0 0;
+}
+.price-list ul {
+    padding: 0px;
+    list-style: none;
+}
+.price-gd-top {
+    background:#00acee;
+    text-align: center;
+}
+.price-gd-top h4 {
+    font-size: 1.8em;
+    color: #fff;
+    padding: 0.4em 1em;
+        background: #0e99ce;
+      font-weight: 300;
+}
+.price-gd-top h3 {
+    padding:0.2em 0em 0.1em 0em;
+    font-size:2.5em;
+    color: #fff;
+}
+.price-gd-top h5 {
+    font-size: 1em;
+    color: #fff;
+    padding: 0.2em 0em 0.8em 0em;
+}
+.price-gd-bottom {
+    background: #fff;
+    text-align: center;
+    padding: 1em 0em;
+}
+.price-gd-top.pric-clr2 h4 {
+    background: #d4b906;
+}
+.price-gd-top.pric-clr2 {
+    background: #ecce04
+}
+.price-selet.pric-sclr2 a {
+    background:#ecce04
+}
+.price-gd-top.pric-clr3 {
+  background:#2baf2b;
+}
+.price-gd-top.pric-clr3 h4 {
+       background: #209a20;
+}
+.price-gd-top.pric-clr4 {
+  background:#e83f3f;
+}
+.price-gd-top.pric-clr4 h4 {
+      background: #d62c2c;
+}
+.price-selet.pric-sclr4 a {
+    background:#e83f3f;
+}
+.price-selet.pric-sclr3 a {
+    background:#2baf2b;
+}
+.price-list ul li {
+      padding: 0.5em 0em;
+    font-size: 0.9em;
+    color: #999999;
+    border-bottom: 1px dotted #ddd;
+}
+.price-selet {
+    padding: 1em 0em;
+    text-align: center;
+    background: #fff;
+}
+.price-selet a {
+    font-size: 1.1em;
+    color: #fff;
+    display: block;
+}
+.price-selet a {
+  font-size: 0.9em;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5em 2em;
+    background: #00acee;
+    text-decoration: none;
+      border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.price-block {
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.price-block:hover,.ptblayouts-pricing:hover,.w3-agileits-vpn-grid:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    z-index: 1;
+}
+
+.download-div{text-align:center; margin-top:40px; padding:40px 0px; clear:both;}
+.download{
+  padding:10px 30px;
+  background-color:#006699;
+  color:#000000;
+  font-size:24px;
+  text-transform:uppercase;
+  text-decoration:none;
+  margin-top:2px;
+  border-radius:10px;
+}
+.special,#news,.w3_content_agilleinfo_inner,.team-section,.plans-section{
+    padding: 25px 0;
+}
+
+h3.tittle,h2.ptbl-inner-h-title,h3.ptbl-inner-h-title{
+    color: #000;
+    font-size:2.5em;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+h2.ptbl-inner-h-title,h3.ptbl-inner-h-title{
+  margin-bottom:1em;
+  text-transform:uppercase;
+}
+h3.tittle.two {
+    color: #fff;
+}
+
+
+/*@font-face {
+  font-family: 'Kruti_Dev_010';
+  src: url('../font/Kruti_Dev_010.ttf')  format('truetype');
+  src: url('../font/Kruti_Dev_010.eot');
+  src: local("Hindi"), url("../font/Kruti_Dev_010.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Kruti';
+    src: url('../ckeditor/lang/Kruti/k010.eot');
+    src: local("Hindi"), url("../fonts/k010.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hindiFont{
+font-family:'Kruti'!important;
+  
+}
+
+textarea
+{
+  border:1px solid #999999;
+  width:100%;
+  margin:5px 0;
+  padding:3px;
+/*   font-size: 25px!important;*/
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.boxc{ width: 100%; }
+.backSlashbtn {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.backSlashbtn:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .backSlashbtn {
+  background-color: #2196F3;
+}
+
+input:focus + .backSlashbtn {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .backSlashbtn:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.backSlashbtn.round {
+  border-radius: 34px;
+}
+
+.backSlashbtn.round:before {
+  border-radius: 50%;
+}
+.hindiFont{
+font-family:'Kruti_Dev_010';
+  
+}
+.timer {
+    width: 100px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#waitaminute {  
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+display:none;
+position:fixed;
+top:0px;
+left:0px;
+z-index:100000;
+background:#000;
+background:rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+}
+.waitaminute-message{   
+position:absolute;
+top:50%;
+width:100%;
+color:#fff;
+font-size:18px;
+font-weight: 600;
+line-height:60px;
+margin-top:-30px;
+/*font-family: "Open Sans",sans-serif;*/
+}
+.waitaminute-message img {
+  width:5%!important;
+}
+
+skip-tag {
+    color: red !important;
+}
+
+ins2 {
+    /* text-decoration: line-through; */
+    color: red!important;
+    /* padding: 0px 3px; */
+}
+
+ins::before {
+    content: "{";
+}
+ins::after {
+ content: "}";
+}
+ins2::before {
+    content: "{";
+}
+ins2::after {
+content: "}";
+}
+del::before {
+   content: "{";
+}
+del::after {
+content: "}";
+}
+skip-tag::before {
+   content: "{";
+}
+skip-tag::after {
+content: "}";
+}
+
+ins {
+    text-decoration: line-through;
+    /* text-decoration: none; */
+    /* background: #efc2c7; */
+    color: #b30000;
+    padding: 0px 3px;
+}

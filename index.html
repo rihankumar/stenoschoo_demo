@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>STENO SCHOOL & TYPING CLASSES - India's Best Speed Batch</title>
+
+    <!-- Tailwind CSS for Modern UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Existing CSS Files -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link href="css/toastr.css" rel="stylesheet" />
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Brighter, more engaging color palette
+              "steno-primary": "#ff3366",
+              "steno-secondary": "#9933ff",
+              "steno-accent": "#ffcc00",
+              "steno-success": "#00cc88",
+              "steno-dark": "#2a2a4a",
+              "steno-light": "#f9fafb",
+              "steno-tertiary": "#3399ff",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            animation: {
+              "bounce-slow": "bounce 3s infinite",
+              "pulse-glow": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              "slide-up": "slideUp 0.5s ease-out",
+              float: "float 6s ease-in-out infinite",
+              "zoom-in": "zoomIn 0.5s ease-out",
+              "spin-slow": "spin 8s linear infinite",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .hero-pattern {
+        background-image: radial-gradient(
+            circle at 25% 25%,
+            rgba(255, 204, 0, 0.15) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 75% 75%,
+            rgba(51, 153, 255, 0.15) 0%,
+            transparent 50%
+          ),
+          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .glass-effect {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #ff3366, #ffcc00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .shine-effect {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .shine-effect:after {
+        content: "";
+        position: absolute;
+        top: -110%;
+        left: -210%;
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+        transform: rotate(30deg);
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.13) 0%,
+          rgba(255, 255, 255, 0.13) 77%,
+          rgba(255, 255, 255, 0.5) 92%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      .shine-effect:hover:after {
+        opacity: 1;
+        top: -30%;
+        left: -30%;
+        transition-property: left, top, opacity;
+        transition-duration: 0.7s, 0.7s, 0.15s;
+        transition-timing-function: ease;
+      }
+
+      .loading {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="font-poppins bg-gray-50">
+    <!-- Navigation -->
+    <!-- Enhanced Mobile Navigation -->
+    <nav
+      class="bg-gradient-to-r from-steno-primary via-steno-secondary to-steno-tertiary shadow-2xl fixed w-full z-50 top-0 backdrop-blur-sm"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-3">
+          <!-- Mobile menu button with animation -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-white p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="flex items-center space-x-3">
+            <img
+              src="images/logo.png"
+              alt="Steno School"
+              class="h-10 md:h-12 w-auto animate-float"
+            />
+            <span class="text-white text-lg md:text-xl font-bold"
+              >STENO SCHOOL</span
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="#home"
+              class="text-white hover:text-steno-accent transition duration-300 font-medium relative group"
+              >Home
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-steno-accent transition-all duration-300 group-hover:w-full"
+              ></span
+            ></a>
+            <a
+              href="#courses"
+              class="text-white hover:text-steno-accent transition duration-300 font-medium relative group"
+              >Courses
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-steno-accent transition-all duration-300 group-hover:w-full"
+              ></span
+            ></a>
+            <a
+              href="#testimonials"
+              class="text-white hover:text-steno-accent transition duration-300 font-medium relative group"
+              >Reviews
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-steno-accent transition-all duration-300 group-hover:w-full"
+              ></span
+            ></a>
+            <a
+              href="#pricing"
+              class="text-white hover:text-steno-accent transition duration-300 font-medium relative group"
+              >Pricing
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-steno-accent transition-all duration-300 group-hover:w-full"
+              ></span
+            ></a>
+          </div>
+
+          <div class="flex space-x-2 md:space-x-3">
+            <button
+              onclick="openModal('loginModal')"
+              class="bg-white text-steno-primary px-3 py-2 md:px-4 md:py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg text-xs md:text-sm"
+            >
+              Login
+            </button>
+            <button
+              onclick="openModal('registerModal')"
+              class="bg-steno-accent text-steno-dark px-3 py-2 md:px-4 md:py-2 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 transform hover:scale-105 shadow-lg text-xs md:text-sm"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu with improved animation -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden pb-4 mt-2 bg-gradient-to-b from-transparent to-steno-secondary rounded-b-lg transition-all duration-300 ease-in-out"
+        >
+          <div class="flex flex-col space-y-0 pt-2">
+            <a
+              href="#home"
+              class="text-white hover:text-steno-accent transition duration-300 py-3 px-4 hover:bg-white hover:bg-opacity-10 rounded-lg"
+              >Home</a
+            >
+            <a
+              href="#courses"
+              class="text-white hover:text-steno-accent transition duration-300 py-3 px-4 hover:bg-white hover:bg-opacity-10 rounded-lg"
+              >Courses</a
+            >
+            <a
+              href="#testimonials"
+              class="text-white hover:text-steno-accent transition duration-300 py-3 px-4 hover:bg-white hover:bg-opacity-10 rounded-lg"
+              >Reviews</a
+            >
+            <a
+              href="#pricing"
+              class="text-white hover:text-steno-accent transition duration-300 py-3 px-4 hover:bg-white hover:bg-opacity-10 rounded-lg"
+              >Pricing</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Enhanced Gradient -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center bg-gradient-to-br from-rose-500 via-fuchsia-500 to-indigo-600 hero-pattern pt-20 overflow-hidden"
+    >
+      <!-- Floating Elements -->
+      <div
+        class="absolute top-20 left-10 w-20 h-20 bg-steno-accent rounded-full opacity-10 animate-float"
+      ></div>
+      <div
+        class="absolute top-40 right-20 w-32 h-32 bg-steno-tertiary rounded-full opacity-10 animate-bounce-slow"
+      ></div>
+      <div
+        class="absolute bottom-20 left-20 w-16 h-16 bg-steno-success rounded-full opacity-10 animate-pulse"
+      ></div>
+      <div
+        class="absolute bottom-40 right-10 w-24 h-24 bg-steno-accent opacity-10 animate-spin-slow rounded-full"
+      ></div>
+
+      <div class="container mx-auto px-4 z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="text-white" data-aos="fade-right">
+            <div
+              class="inline-block bg-gradient-to-r from-steno-accent to-yellow-400 text-steno-dark px-4 py-2 rounded-full text-sm font-bold mb-6 animate-pulse-glow shadow-lg"
+            >
+              🏆 India's #1 Steno Institute
+            </div>
+
+            <h1
+              class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            >
+              Master
+              <span
+                class="gradient-text bg-gradient-to-r from-steno-accent to-yellow-300 bg-clip-text text-transparent"
+                >STENOGRAPHY</span
+              ><br />
+              Like Never Before
+            </h1>
+
+            <p class="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
+              Join
+              <span class="text-steno-accent font-bold">5000+</span> successful
+              students who cleared competitive exams with our
+              <span class="text-steno-accent font-bold"
+                >interactive LIVE classes</span
+              >
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8"
+            >
+              <button
+                onclick="openModal('registerModal')"
+                class="shine-effect bg-gradient-to-r from-steno-accent to-yellow-400 text-steno-dark px-8 py-4 rounded-full font-bold text-lg hover:from-yellow-400 hover:to-steno-accent transform hover:scale-105 transition duration-300 shadow-xl"
+              >
+                🚀 Start Free Trial
+              </button>
+              <button
+                onclick="openModal('loginModal')"
+                class="glass-effect text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:bg-opacity-20 transition duration-300 border border-white border-opacity-30"
+              >
+                📱 Login Now
+              </button>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 md:gap-6 text-center">
+              <div class="glass-effect p-3 md:p-4 rounded-xl">
+                <div class="text-xl md:text-2xl font-bold text-steno-accent">
+                  5000+
+                </div>
+                <div class="text-xs md:text-sm text-gray-100">Students</div>
+              </div>
+              <div class="glass-effect p-3 md:p-4 rounded-xl">
+                <div class="text-xl md:text-2xl font-bold text-steno-accent">
+                  95%
+                </div>
+                <div class="text-xs md:text-sm text-gray-100">Success Rate</div>
+              </div>
+              <div class="glass-effect p-3 md:p-4 rounded-xl">
+                <div class="text-xl md:text-2xl font-bold text-steno-accent">
+                  8+
+                </div>
+                <div class="text-xs md:text-sm text-gray-100">
+                  Years Experience
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative" data-aos="fade-left">
+            <div class="relative group">
+              <img
+                src="images/steno.jpg"
+                alt="Stenography Training"
+                class="rounded-3xl shadow-2xl w-full transform group-hover:scale-105 transition duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-3xl opacity-40"
+              ></div>
+            </div>
+
+            <!-- Floating QR Code -->
+            <div
+              class="absolute -top-6 -right-6 bg-gradient-to-br from-steno-accent to-yellow-400 p-3 md:p-4 rounded-2xl shadow-2xl animate-float"
+            >
+              <img
+                src="images/qrcodenew.jpg"
+                alt="QR Code"
+                class="w-16 h-16 md:w-24 md:h-24 rounded-lg"
+              />
+              <div
+                class="text-center mt-1 md:mt-2 text-xs font-bold text-steno-dark"
+              >
+                Scan & Join
+              </div>
+            </div>
+
+            <!-- Feature Pills -->
+            <div
+              class="absolute -bottom-6 -left-6 bg-gradient-to-r from-steno-success to-emerald-500 p-3 md:p-4 rounded-2xl shadow-2xl"
+            >
+              <div class="text-white text-center">
+                <div class="text-base md:text-lg font-bold">100%</div>
+                <div class="text-xs">Live Classes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Features -->
+    <section id="courses" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <div
+            class="inline-block bg-gradient-to-r from-steno-primary to-steno-secondary text-white px-6 py-2 rounded-full text-sm font-bold mb-4 shadow-md"
+          >
+            📚 Expert Training Programs
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold text-steno-dark mb-4">
+            Our <span class="gradient-text">Specialized Courses</span>
+          </h2>
+          <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+            Industry-leading courses designed by experts to help you excel in
+            competitive exams and build a successful career
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- SSC Exams Card -->
+          <div
+            class="rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 overflow-hidden bg-white border border-gray-100 group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-40 bg-gradient-to-r from-steno-primary to-steno-secondary relative overflow-hidden"
+            >
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <span class="text-white text-5xl block mb-2">SSC</span>
+                  <span
+                    class="bg-steno-accent text-steno-dark px-4 py-1 rounded-full text-sm font-bold"
+                    >Most Popular</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-steno-dark mb-3 flex items-center"
+              >
+                <span class="bg-steno-primary text-white p-2 rounded-lg mr-3"
+                  >📝</span
+                >
+                SSC Stenographer
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive preparation for Grade C & D, Railways – RRB, NVS,
+                DSSSB, HSSC, EPFO & all state level exams.
+              </p>
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="bg-gray-50 p-3 rounded-lg text-center">
+                  <span class="text-sm font-semibold text-gray-600 block"
+                    >Duration</span
+                  >
+                  <span class="text-steno-primary font-bold">3-6 Months</span>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center">
+                  <span class="text-sm font-semibold text-gray-600 block"
+                    >Mode</span
+                  >
+                  <span class="text-steno-primary font-bold">Live Online</span>
+                </div>
+              </div>
+              <div class="border-t border-gray-100 pt-4">
+                <h4 class="font-semibold text-gray-700 mb-2">
+                  What You'll Learn:
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Speed
+                    Building (80-100 WPM)
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Dictation &
+                    Transcription
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Exam Pattern
+                    Practice
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Mock Tests &
+                    Evaluations
+                  </li>
+                </ul>
+              </div>
+              <button
+                onclick="openModal('registerModal')"
+                class="w-full mt-6 bg-gradient-to-r from-steno-primary to-steno-secondary text-white py-3 rounded-lg font-semibold hover:from-steno-secondary hover:to-steno-primary transition duration-300 shine-effect"
+              >
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Defence Card -->
+          <div
+            class="rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 overflow-hidden bg-white border border-gray-100 group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="h-40 bg-gradient-to-r from-steno-tertiary to-blue-500 relative overflow-hidden"
+            >
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <span class="text-white text-5xl block mb-2">🛡️</span>
+                  <span
+                    class="bg-steno-accent text-steno-dark px-4 py-1 rounded-full text-sm font-bold"
+                    >High Demand</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-steno-dark mb-3 flex items-center"
+              >
+                <span class="bg-steno-tertiary text-white p-2 rounded-lg mr-3"
+                  >🔒</span
+                >
+                Defence Services
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Specialized training for ASI (Steno), CRPF, CISF, SSB and other
+                defence stenographer positions.
+              </p>
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="bg-gray-50 p-3 rounded-lg text-center">
+                  <span class="text-sm font-semibold text-gray-600 block"
+                    >Duration</span
+                  >
+                  <span class="text-steno-tertiary font-bold">4-8 Months</span>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center">
+                  <span class="text-sm font-semibold text-gray-600 block"
+                    >Mode</span
+                  >
+                  <span class="text-steno-tertiary font-bold"
+                    >Live + Recorded</span
+                  >
+                </div>
+              </div>
+              <div class="border-t border-gray-100 pt-4">
+                <h4 class="font-semibold text-gray-700 mb-2">
+                  What You'll Learn:
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Military
+                    Standards & Protocol
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Security
+                    Documentation
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Physical
+                    Fitness Training
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Interview
+                    Preparation
+                  </li>
+                </ul>
+              </div>
+              <button
+                onclick="openModal('registerModal')"
+                class="w-full mt-6 bg-gradient-to-r from-steno-tertiary to-blue-500 text-white py-3 rounded-lg font-semibold hover:from-blue-500 hover:to-steno-tertiary transition duration-300 shine-effect"
+              >
+                Enroll Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Legal Card -->
+          <div
+            class="rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 overflow-hidden bg-white border border-gray-100 group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="h-40 bg-gradient-to-r from-purple-500 to-steno-secondary relative overflow-hidden"
+            >
+              <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <span class="text-white text-5xl block mb-2">⚖️</span>
+                  <span
+                    class="bg-steno-accent text-steno-dark px-4 py-1 rounded-full text-sm font-bold"
+                    >Premium</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black opacity-60"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3
+                class="text-xl font-bold text-steno-dark mb-3 flex items-center"
+              >
+                <span class="bg-purple-500 text-white p-2 rounded-lg mr-3"
+                  >📋</span
+                >
+                Legal Services
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Professional training for APS/PA/SPA/PS/Steno positions in
+                District Court, High Court, Supreme Court.
+              </p>
+              <div class="grid grid-cols-2 gap-3 mb-6">
+                <div class="bg-gray-50 p-3 rounded-lg text-center">
+                  <span class="text-sm font-semibold text-gray-600 block"
+                    >Duration</span
+                  >
+                  <span class="text-purple-500 font-bold">6-12 Months</span>
+                </div>
+                <div class="bg-gray-50 p-3 rounded-lg text-center">
+                  <span class="text-sm font-semibold text-gray-600 block"
+                    >Mode</span
+                  >
+                  <span class="text-purple-500 font-bold">Hybrid</span>
+                </div>
+              </div>
+              <div class="border-t border-gray-100 pt-4">
+                <h4 class="font-semibold text-gray-700 mb-2">
+                  What You'll Learn:
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Legal
+                    Terminology & Citations
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Court
+                    Procedures & Protocols
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Legal
+                    Document Formatting
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-steno-success mr-2">✓</span> Professional
+                    Ethics
+                  </li>
+                </ul>
+              </div>
+              <button
+                onclick="openModal('registerModal')"
+                class="w-full mt-6 bg-gradient-to-r from-purple-500 to-steno-secondary text-white py-3 rounded-lg font-semibold hover:from-steno-secondary hover:to-purple-500 transition duration-300 shine-effect"
+              >
+                Enroll Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Comparison Button -->
+        <!-- <div class="text-center mt-12">
+          <button
+            onclick="openModal('registerModal')"
+            class="bg-gradient-to-r from-steno-dark to-steno-secondary text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105 inline-flex items-center"
+          >
+            <span>Compare All Courses</span>
+            <svg
+              class="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <!-- <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-4xl font-bold text-steno-dark mb-4">
+            Student Success Stories
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Hear from our successful students who achieved their career goals
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="images/review1.png"
+              alt="Student Review"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <div class="flex text-steno-yellow mb-2">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="text-gray-600 text-sm">
+              "Excellent training program. Helped me clear SSC Stenographer exam
+              in first attempt!"
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="images/review2.jpg"
+              alt="Student Review"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <div class="flex text-steno-yellow mb-2">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="text-gray-600 text-sm">
+              "Best institute for stenography. Professional instructors and
+              great learning environment."
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="images/review3.jpg"
+              alt="Student Review"
+              class="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <div class="flex text-steno-yellow mb-2">
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="text-gray-600 text-sm">
+              "Interactive live classes made learning enjoyable. Highly
+              recommended for serious students."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Testimonials Section with Slider -->
+    <section
+      id="testimonials"
+      class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden"
+    >
+      <div class="absolute top-0 left-0 w-full h-full opacity-5">
+        <img
+          src="images/steno1.jpg"
+          alt="Background"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <div
+            class="inline-block bg-gradient-to-r from-steno-primary to-steno-secondary text-white px-6 py-2 rounded-full text-sm font-bold mb-4"
+          >
+            ⭐ Student Success Stories
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold text-steno-dark mb-4">
+            What Our <span class="gradient-text">Students Say</span>
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Real stories from students who achieved their career goals with our
+            training
+          </p>
+        </div>
+
+        <!-- Testimonials Slider -->
+        <div class="relative max-w-6xl mx-auto">
+          <div class="testimonial-slider overflow-hidden">
+            <div
+              class="testimonial-track flex transition-transform duration-500 ease-in-out"
+              id="testimonialTrack"
+            >
+              <!-- Testimonial 1 -->
+              <div
+                class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 h-full"
+                >
+                  <div class="flex items-center mb-6">
+                    <img
+                      src="images/review1.png"
+                      alt="Student Review"
+                      class="w-16 h-16 rounded-full object-cover border-4 border-steno-accent"
+                    />
+                    <div class="ml-4">
+                      <h4 class="font-bold text-steno-dark">Priya Sharma</h4>
+                      <p class="text-sm text-gray-500">SSC Stenographer</p>
+                    </div>
+                  </div>
+                  <div class="flex text-steno-accent mb-4 text-xl">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 italic leading-relaxed">
+                    "Incredible training program! The live interactive classes
+                    made learning stenography enjoyable. Cleared SSC
+                    Stenographer exam in my first attempt with 95% marks!"
+                  </p>
+                  <div class="mt-6 pt-4 border-t border-gray-100">
+                    <span class="text-steno-success font-semibold"
+                      >✅ SSC Grade C Selected</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div
+                class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 h-full"
+                >
+                  <div class="flex items-center mb-6">
+                    <img
+                      src="images/review2.jpg"
+                      alt="Student Review"
+                      class="w-16 h-16 rounded-full object-cover border-4 border-steno-accent"
+                    />
+                    <div class="ml-4">
+                      <h4 class="font-bold text-steno-dark">Rahul Kumar</h4>
+                      <p class="text-sm text-gray-500">Defence Steno</p>
+                    </div>
+                  </div>
+                  <div class="flex text-steno-accent mb-4 text-xl">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 italic leading-relaxed">
+                    "Best institute for stenography training! Professional
+                    instructors, excellent study material, and amazing support.
+                    Highly recommend for serious aspirants."
+                  </p>
+                  <div class="mt-6 pt-4 border-t border-gray-100">
+                    <span class="text-steno-success font-semibold"
+                      >✅ CRPF ASI Selected</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div
+                class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 h-full"
+                >
+                  <div class="flex items-center mb-6">
+                    <img
+                      src="images/review3.jpg"
+                      alt="Student Review"
+                      class="w-16 h-16 rounded-full object-cover border-4 border-steno-accent"
+                    />
+                    <div class="ml-4">
+                      <h4 class="font-bold text-steno-dark">Anjali Singh</h4>
+                      <p class="text-sm text-gray-500">High Court Steno</p>
+                    </div>
+                  </div>
+                  <div class="flex text-steno-accent mb-4 text-xl">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 italic leading-relaxed">
+                    "The interactive live classes transformed my stenography
+                    skills. From 40 WPM to 100+ WPM in just 6 months! Thank you
+                    Steno School!"
+                  </p>
+                  <div class="mt-6 pt-4 border-t border-gray-100">
+                    <span class="text-steno-success font-semibold"
+                      >✅ High Court Selected</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional testimonials -->
+              <div
+                class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 h-full"
+                >
+                  <div class="flex items-center mb-6">
+                    <img
+                      src="images/review4.jpg"
+                      alt="Student Review"
+                      class="w-16 h-16 rounded-full object-cover border-4 border-steno-accent"
+                    />
+                    <div class="ml-4">
+                      <h4 class="font-bold text-steno-dark">Vikash Yadav</h4>
+                      <p class="text-sm text-gray-500">Railway Steno</p>
+                    </div>
+                  </div>
+                  <div class="flex text-steno-accent mb-4 text-xl">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 italic leading-relaxed">
+                    "Outstanding coaching with personal attention. The mock
+                    tests and practice sessions were exactly like real exam.
+                    Highly satisfied with results!"
+                  </p>
+                  <div class="mt-6 pt-4 border-t border-gray-100">
+                    <span class="text-steno-success font-semibold"
+                      >✅ Railway RRB Selected</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="testimonial-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 h-full"
+                >
+                  <div class="flex items-center mb-6">
+                    <img
+                      src="images/review5.png"
+                      alt="Student Review"
+                      class="w-16 h-16 rounded-full object-cover border-4 border-steno-accent"
+                    />
+                    <div class="ml-4">
+                      <h4 class="font-bold text-steno-dark">Neha Gupta</h4>
+                      <p class="text-sm text-gray-505">DSSSB Steno</p>
+                    </div>
+                  </div>
+                  <div class="flex text-steno-accent mb-4 text-xl">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                  <p class="text-gray-600 italic leading-relaxed">
+                    "Amazing experience! The faculty is very supportive and the
+                    study material is comprehensive. Achieved my dream job
+                    because of Steno School."
+                  </p>
+                  <div class="mt-6 pt-4 border-t border-gray-100">
+                    <span class="text-steno-success font-semibold"
+                      >✅ DSSSB Selected</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <button
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-steno-primary text-white p-3 rounded-full shadow-lg hover:bg-steno-secondary transition duration-300 z-10"
+            onclick="slideTestimonials('prev')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-steno-primary text-white p-3 rounded-full shadow-lg hover:bg-steno-secondary transition duration-300 z-10"
+            onclick="slideTestimonials('next')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Slider Dots -->
+          <div class="flex justify-center mt-8 space-x-2" id="testimonialDots">
+            <button
+              class="w-3 h-3 rounded-full bg-steno-primary dot active"
+              onclick="goToSlide(0)"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 dot"
+              onclick="goToSlide(1)"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 dot"
+              onclick="goToSlide(2)"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div
+      id="loginModal"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-2xl p-8 w-full max-w-md transform transition-all duration-300 scale-95"
+        onclick="event.stopPropagation()"
+      >
+        <div class="text-center mb-6">
+          <h2 class="text-2xl font-bold text-steno-dark mb-2">Welcome Back</h2>
+          <p class="text-gray-600">Sign in to your account</p>
+        </div>
+
+        <form id="loginForm" method="post" class="space-y-4">
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-primary focus:border-transparent outline-none transition duration-200"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="user_pass"
+              id="user_pass"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-primary focus:border-transparent outline-none transition duration-200"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <button
+            type="submit"
+            name="login"
+            id="login"
+            class="w-full bg-gradient-to-r from-steno-primary to-steno-secondary text-white py-3 rounded-lg font-semibold hover:from-steno-secondary hover:to-steno-primary transition duration-300 transform hover:scale-105"
+          >
+            Sign In
+          </button>
+        </form>
+
+        <span id="uploadStatusl" class="block mt-4 text-center"></span>
+
+        <div class="text-center mt-6">
+          <p class="text-gray-600">
+            Don't have an account?
+            <button
+              onclick="closeModal('loginModal'); openModal('registerModal')"
+              class="text-steno-primary font-semibold hover:underline"
+            >
+              Register here
+            </button>
+          </p>
+        </div>
+
+        <button
+          onclick="closeModal('loginModal')"
+          class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div
+      id="registerModal"
+      class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-2xl p-6 md:p-8 w-full max-w-md transform transition-all duration-300 scale-95 animate-zoom-in overflow-y-auto max-h-[90vh]"
+        onclick="event.stopPropagation()"
+      >
+        <div class="text-center mb-6">
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-steno-accent to-yellow-400 rounded-full mb-4"
+          >
+            <svg
+              class="w-8 h-8 text-steno-dark"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold text-steno-dark mb-2">
+            Join Steno School
+          </h2>
+          <p class="text-gray-600">Create your account to start learning</p>
+        </div>
+
+        <form id="registerForm" method="post" class="space-y-4">
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              name="user_name"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-accent focus:border-transparent outline-none transition duration-200"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="user_email"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-accent focus:border-transparent outline-none transition duration-200"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Mobile Number</label
+            >
+            <input
+              type="tel"
+              name="user_mobile"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-accent focus:border-transparent outline-none transition duration-200"
+              placeholder="Enter your mobile number"
+            />
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Course Language</label
+            >
+            <select
+              name="user_lang"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-accent focus:border-transparent outline-none transition duration-200 bg-white"
+            >
+              <option value="">Select Language</option>
+              <option value="English">English (Steno + Typing)</option>
+              <option value="Hindi">Hindi (Steno + Typing)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-semibold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="user_pass"
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-steno-accent focus:border-transparent outline-none transition duration-200"
+              placeholder="Create a password"
+            />
+          </div>
+
+          <div class="flex items-start">
+            <input
+              type="checkbox"
+              id="terms"
+              class="w-4 h-4 mt-1 text-steno-accent border-gray-300 rounded focus:ring-steno-accent"
+            />
+            <label for="terms" class="ml-2 block text-sm text-gray-600">
+              I agree to Steno School's
+              <a href="#" class="text-steno-primary hover:underline"
+                >Terms of Service</a
+              >
+              and
+              <a href="#" class="text-steno-primary hover:underline"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            name="signup"
+            id="signup"
+            class="w-full bg-gradient-to-r from-steno-accent to-yellow-500 text-steno-dark py-3 rounded-lg font-semibold hover:from-yellow-500 hover:to-steno-accent transition duration-300 transform hover:scale-105 shine-effect"
+          >
+            Create Account
+          </button>
+        </form>
+
+        <span id="uploadStatus" class="block mt-4 text-center"></span>
+
+        <div class="text-center mt-6">
+          <p class="text-gray-600">
+            Already have an account?
+            <button
+              onclick="closeModal('registerModal'); openModal('loginModal')"
+              class="text-steno-primary font-semibold hover:underline"
+            >
+              Sign in here
+            </button>
+          </p>
+        </div>
+
+        <button
+          onclick="closeModal('registerModal')"
+          class="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <section
+      id="pricing"
+      class="py-20 bg-gradient-to-br from-steno-dark via-gray-900 to-purple-900 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <div
+            class="inline-block bg-gradient-to-r from-steno-accent to-yellow-400 text-steno-dark px-6 py-2 rounded-full text-sm font-bold mb-4"
+          >
+            💰 Special Offer - Limited Time
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Choose Your
+            <span
+              class="gradient-text bg-gradient-to-r from-steno-accent to-yellow-300 bg-clip-text text-transparent"
+              >Success Plan</span
+            >
+          </h2>
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+            Flexible payment options designed for every student's budget
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Basic Plan -->
+          <div
+            class="glass-effect p-8 rounded-2xl hover:scale-105 transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-center">
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <span class="text-white text-2xl">📚</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">Basic Course</h3>
+              <p class="text-gray-300 mb-6">Perfect for beginners</p>
+
+              <div class="mb-6">
+                <span class="text-4xl font-bold text-steno-accent">₹2,999</span>
+                <span class="text-gray-400 line-through ml-2">₹4,999</span>
+                <div class="text-gray-300 text-sm">3 Months Access</div>
+              </div>
+
+              <ul class="space-y-3 text-gray-300 mb-8">
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Basic
+                  Stenography Course
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Live Classes
+                  (3x/week)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Study Material
+                  PDF
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> WhatsApp
+                  Support
+                </li>
+              </ul>
+
+              <button
+                onclick="openModal('registerModal')"
+                class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition duration-300"
+              >
+                Choose Basic
+              </button>
+            </div>
+          </div>
+
+          <!-- Premium Plan (Most Popular) -->
+          <div
+            class="glass-effect p-8 rounded-2xl hover:scale-105 transition duration-300 border-2 border-steno-accent relative"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-steno-accent to-yellow-400 text-steno-dark px-6 py-2 rounded-full text-sm font-bold"
+            >
+              🔥 Most Popular
+            </div>
+
+            <div class="text-center">
+              <div
+                class="bg-gradient-to-r from-steno-accent to-yellow-400 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <span class="text-steno-dark text-2xl">🏆</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">Premium Course</h3>
+              <p class="text-gray-300 mb-6">Most comprehensive package</p>
+
+              <div class="mb-6">
+                <span class="text-4xl font-bold text-steno-accent">₹4,999</span>
+                <span class="text-gray-400 line-through ml-2">₹8,999</span>
+                <div class="text-gray-300 text-sm">6 Months Access</div>
+              </div>
+
+              <ul class="space-y-3 text-gray-300 mb-8">
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Complete
+                  Stenography + Typing
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Daily Live
+                  Classes
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Recorded Video
+                  Library
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Mock Tests &
+                  Assessments
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Personal Mentor
+                  Support
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Job Placement
+                  Assistance
+                </li>
+              </ul>
+
+              <button
+                onclick="openModal('registerModal')"
+                class="w-full bg-gradient-to-r from-steno-accent to-yellow-400 text-steno-dark py-3 rounded-full font-semibold hover:from-yellow-400 hover:to-steno-accent transition duration-300"
+              >
+                Choose Premium
+              </button>
+            </div>
+          </div>
+
+          <!-- Advanced Plan -->
+          <div
+            class="glass-effect p-8 rounded-2xl hover:scale-105 transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="text-center">
+              <div
+                class="bg-gradient-to-r from-purple-500 to-purple-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <span class="text-white text-2xl">🎯</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">
+                Advanced Course
+              </h3>
+              <p class="text-gray-300 mb-6">For competitive exam focus</p>
+
+              <div class="mb-6">
+                <span class="text-4xl font-bold text-steno-accent">₹7,999</span>
+                <span class="text-gray-400 line-through ml-2">₹12,999</span>
+                <div class="text-gray-300 text-sm">12 Months Access</div>
+              </div>
+
+              <ul class="space-y-3 text-gray-300 mb-8">
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> All Premium
+                  Features
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Exam-Specific
+                  Training
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> 1-on-1 Doubt
+                  Sessions
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> Interview
+                  Preparation
+                </li>
+                <li class="flex items-center">
+                  <span class="text-steno-success mr-2">✓</span> 100% Placement
+                  Guarantee
+                </li>
+              </ul>
+
+              <button
+                onclick="openModal('registerModal')"
+                class="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 rounded-full font-semibold hover:from-purple-600 hover:to-purple-700 transition duration-300"
+              >
+                Choose Advanced
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Options -->
+        <!-- <div class="mt-16 text-center" data-aos="fade-up">
+          <h3 class="text-2xl font-bold text-white mb-8">
+            Secure Payment Options
+          </h3>
+          <div class="flex justify-center space-x-6 flex-wrap">
+            <div class="glass-effect p-4 rounded-xl mb-4">
+              <img
+                src="images/1pic.png"
+                alt="Payment Option"
+                class="h-8 mx-auto"
+              />
+            </div>
+            <div class="glass-effect p-4 rounded-xl mb-4">
+              <span class="text-white font-bold">💳 Credit Card</span>
+            </div>
+            <div class="glass-effect p-4 rounded-xl mb-4">
+              <span class="text-white font-bold">🏦 Net Banking</span>
+            </div>
+            <div class="glass-effect p-4 rounded-xl mb-4">
+              <span class="text-white font-bold">📱 UPI</span>
+            </div>
+            <div class="glass-effect p-4 rounded-xl mb-4">
+              <span class="text-white font-bold">💰 EMI Available</span>
+            </div>
+          </div>
+
+          <div
+            class="mt-8 bg-gradient-to-r from-green-500 to-emerald-600 p-6 rounded-2xl inline-block"
+          >
+            <div class="text-white text-center">
+              <div class="text-2xl font-bold">🔒 100% Secure</div>
+              <div class="text-sm">SSL Encrypted Payment Gateway</div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-steno-dark text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center space-x-3 mb-4">
+              <img
+                src="images/logo.png"
+                alt="Steno School"
+                class="h-10 w-auto"
+              />
+              <span class="text-xl font-bold">STENO SCHOOL</span>
+            </div>
+            <p class="text-gray-400">
+              India's leading stenography and typing training institute
+              preparing students for government and private sector careers.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-yellow-200 mb-4">
+              Quick Links
+            </h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#home" class="hover:text-steno-yellow transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#courses" class="hover:text-steno-yellow transition"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-steno-yellow transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-steno-yellow transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-yellow-500 mb-4">Courses</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>SSC Stenographer</li>
+              <li>Defence Services</li>
+              <li>Legal Services</li>
+              <li>Typing Classes</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-yellow-200 mb-4">
+              Contact Info
+            </h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>📧 info@stenoschool.com</li>
+              <li>📱 +91 9876543210</li>
+              <li>📍 New Delhi, India</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 Steno School. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Libraries (Existing) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/toastr.js"></script>
+
+    <!-- Custom JavaScript for Modern UI -->
+    <script>
+      // Initialize AOS with shorter durations for better performance
+      AOS.init({
+        duration: 800,
+        once: true,
+        disable: "mobile", // Disable on mobile for better performance
+        offset: 100,
+      });
+
+      // Modal Functions with improved animations
+      function openModal(modalId) {
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
+        const modal = document.getElementById(modalId);
+        modal.classList.remove("hidden");
+        setTimeout(() => {
+          modal.children[0].classList.remove("scale-95");
+          modal.children[0].classList.add("scale-100");
+        }, 10);
+      }
+
+      function closeModal(modalId) {
+        document.body.style.overflow = ""; // Restore scrolling
+        const modal = document.getElementById(modalId);
+        modal.children[0].classList.remove("scale-100");
+        modal.children[0].classList.add("scale-95");
+        setTimeout(() => {
+          modal.classList.add("hidden");
+        }, 300);
+      }
+
+      // Close modal on outside click and escape key
+      document.addEventListener("click", function (e) {
+        if (e.target.id === "loginModal") {
+          closeModal("loginModal");
+        }
+        if (e.target.id === "registerModal") {
+          closeModal("registerModal");
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          const loginModal = document.getElementById("loginModal");
+          const registerModal = document.getElementById("registerModal");
+          if (!loginModal.classList.contains("hidden")) {
+            closeModal("loginModal");
+          }
+          if (!registerModal.classList.contains("hidden")) {
+            closeModal("registerModal");
+          }
+        }
+      });
+
+      // Smooth scrolling with improved offset for fixed header
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const headerOffset = 80; // Height of the fixed header
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            const offsetTop =
+              target.getBoundingClientRect().top +
+              window.pageYOffset -
+              headerOffset;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            if (
+              !document
+                .getElementById("mobile-menu")
+                .classList.contains("hidden")
+            ) {
+              document.getElementById("mobile-menu").classList.add("hidden");
+            }
+          }
+        });
+      });
+
+      // Mobile menu toggle with animation
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+
+      // Testimonial Slider Functions optimized for all screen sizes
+      let testimonialIndex = 0;
+      const testimonialSlides = document.querySelectorAll(".testimonial-slide");
+      const totalSlides = Math.ceil(
+        testimonialSlides.length / getSlidesPerView()
+      );
+
+      function getSlidesPerView() {
+        return window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+      }
+
+      function slideTestimonials(direction) {
+        const track = document.getElementById("testimonialTrack");
+        const slideWidth = 100 / getSlidesPerView();
+
+        if (direction === "next") {
+          testimonialIndex = (testimonialIndex + 1) % totalSlides;
+        } else {
+          testimonialIndex = (testimonialIndex - 1 + totalSlides) % totalSlides;
+        }
+
+        const translateX = -testimonialIndex * slideWidth;
+        track.style.transform = `translateX(${translateX}%)`;
+        updateDots();
+      }
+
+      function goToSlide(index) {
+        testimonialIndex = index;
+        const track = document.getElementById("testimonialTrack");
+        const slideWidth = 100 / getSlidesPerView();
+        const translateX = -testimonialIndex * slideWidth;
+        track.style.transform = `translateX(${translateX}%)`;
+        updateDots();
+      }
+
+      function updateDots() {
+        const dots = document.querySelectorAll(".dot");
+        dots.forEach((dot, index) => {
+          if (index === testimonialIndex) {
+            dot.classList.remove("bg-gray-300");
+            dot.classList.add("bg-steno-primary");
+          } else {
+            dot.classList.remove("bg-steno-primary");
+            dot.classList.add("bg-gray-300");
+          }
+        });
+      }
+
+      // Resize listener for responsive slider
+      window.addEventListener("resize", () => {
+        // Update slider based on new screen size
+        const track = document.getElementById("testimonialTrack");
+        if (track) {
+          const slideWidth = 100 / getSlidesPerView();
+          const translateX = -testimonialIndex * slideWidth;
+          track.style.transform = `translateX(${translateX}%)`;
+        }
+      });
+
+      // Auto-slide testimonials with pause on hover
+      let testimonialInterval = setInterval(() => {
+        slideTestimonials("next");
+      }, 5000);
+
+      const testimonialSlider = document.querySelector(".testimonial-slider");
+      if (testimonialSlider) {
+        testimonialSlider.addEventListener("mouseenter", () => {
+          clearInterval(testimonialInterval);
+        });
+
+        testimonialSlider.addEventListener("mouseleave", () => {
+          testimonialInterval = setInterval(() => {
+            slideTestimonials("next");
+          }, 5000);
+        });
+      }
+
+      // Loading functions (preserve existing functionality)
+      function showLoading() {
+        $(".loading").show();
+      }
+
+      function hideLoading() {
+        $(".loading").hide();
+      }
+
+      // Form Submissions (Preserve existing AJAX logic)
+      $(document).ready(function () {
+        // Login Form Submission
+        $("#loginForm").on("submit", function (e) {
+          e.preventDefault();
+          showLoading();
+
+          $.ajax({
+            url: "ajax/login.php",
+            type: "POST",
+            data: $(this).serialize(),
+            success: function (response) {
+              hideLoading();
+              $("#uploadStatusl").html(response);
+
+              if (
+                response.includes("success") ||
+                response.includes("dashboard")
+              ) {
+                toastr.success("Login successful!");
+                setTimeout(() => {
+                  window.location.href = "dashboard.php";
+                }, 1500);
+              } else {
+                toastr.error("Login failed. Please check your credentials.");
+              }
+            },
+            error: function () {
+              hideLoading();
+              toastr.error("Connection error. Please try again.");
+            },
+          });
+        });
+
+        // Registration Form Submission
+        $("#registerForm").on("submit", function (e) {
+          e.preventDefault();
+          showLoading();
+
+          $.ajax({
+            url: "ajax/registration.php",
+            type: "POST",
+            data: $(this).serialize(),
+            success: function (response) {
+              hideLoading();
+              $("#uploadStatus").html(response);
+
+              if (
+                response.includes("success") ||
+                response.includes("registered")
+              ) {
+                toastr.success("Registration successful!");
+                setTimeout(() => {
+                  closeModal("registerModal");
+                  openModal("loginModal");
+                }, 1500);
+              } else {
+                toastr.error("Registration failed. Please try again.");
+              }
+            },
+            error: function () {
+              hideLoading();
+              toastr.error("Connection error. Please try again.");
+            },
+          });
+        });
+      });
+
+      // Enhanced animations on scroll
+      const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-slide-up");
+              observer.unobserve(entry.target); // Stop observing once animation has played
+            }
+          });
+        }, observerOptions);
+
+        // Observe elements with fade-in animation
+        document.querySelectorAll(".fade-in-element").forEach((el) => {
+          observer.observe(el);
+        });
+      }
+    </script>
+  </body>
+</html>
